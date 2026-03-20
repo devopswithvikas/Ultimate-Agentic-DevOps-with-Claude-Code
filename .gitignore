@@ -9,8 +9,8 @@ crash.log
 crash.*.log
 
 # Backend configuration (contains sensitive information)
-backend.tf
-backend.hcl
+# backend.tf
+# backend.hcl
 
 # OS generated files
 .DS_Store

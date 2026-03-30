@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "terraform": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-v", "/home/vikas/github/Ultimate-Agentic-DevOps-with-Claude-Code/terraform:/workspace",
+        "-w", "/workspace",
+        "hashicorp/terraform-mcp-server"
+      ]
+    },
+    "aws": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-api-mcp-server@latest"
+      ],
+      "env": {
+        "AWS_PROFILE": "dev-cert-user",
+        "AWS_REGION": "us-east-1"
+      }
+    }
+  }
+}

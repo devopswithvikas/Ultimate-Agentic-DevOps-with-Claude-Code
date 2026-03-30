@@ -25,12 +25,9 @@ variable "domain_name" {
 variable "route53_zone_id" {
   description = "Route 53 hosted zone ID for the domain"
   type        = string
-  default     = "Z00392091BL2HLJRJWDDN"
 }
 
 variable "terraform_state_bucket" {
   description = "Name of the S3 bucket for Terraform state storage (if using remote backend)"
   type        = string
-  default     = "terraform-state-files-0110"
-  
 }

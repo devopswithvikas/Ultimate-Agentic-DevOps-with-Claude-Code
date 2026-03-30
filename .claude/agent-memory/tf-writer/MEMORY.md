@@ -1,0 +1,1 @@
+- [No secrets or IDs in variable defaults](feedback_secrets_in_defaults.md) — Route 53 zone IDs, bucket names, etc. must not be default values; use partial backend config + tfvars.example
